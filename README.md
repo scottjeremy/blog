@@ -3,4 +3,4 @@
 
 ## JavaScript数据结构
 
-+ [链表](./article/data-structures/linked-lint/README.md)
++ [链表]([./article/data-structures/linked-lint/README.md](https://github.com/scottjeremy/blog/blob/master/article/data-structures/linked-list/README.md))

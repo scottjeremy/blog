@@ -27,9 +27,9 @@
 
 ## 链表的类型
 
-有几种不同类型的链表．但最受欢迎的是：单向链表，双向链表和循环链表（循环链表也包括单向循环链表和双向循环链表）
+有几种不同类型的链表．但最受欢迎的是：单向链表，双向链表和循环链表
 
-## 单向链表
+# 单向链表
 
 单链表是节点的集合，其中每个节点具有２个部分：数据和指向下一个节点的指针．该列表以指向```null```的节点结尾．
 
@@ -299,3 +299,109 @@ export default class LinkedList {
 这里有些朋友可能会疑惑? 按照书上c所写的删除链表某一项通常都会释放内存, 为什么在这里就没有展示?
 
 那是因为JavaScript本身自带有垃圾回收机制, 函数运行时变量才会申请使用内存(变量只是存储内存的指针), 当函数结束的时候, 所占用的内存都会被释放.
+
+# 双向链表
+
+双向链表跟普通链表的区别在于, 链接是双向的:一个链向下一个元素， 另一个链向前一个元素. 如图所示:
+
+![](./images/11.png)
+
+实现一个双向链表类:
+
+```JavaScript
+// 链表节点
+class Node {
+  constructor(data) {
+    this.data = data;
+    this.prev = null;
+    this.next = null;
+  }
+}
+
+// 双向链表
+class DoublyLinkedList {
+  constructor() {
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
+  }
+
+  // 任意位置插入元素
+  insert(index, data) {
+    if (index >= 0 && index <= this.length){
+      const node = new Node(data);
+      let current = this.head;
+      let previous = null;
+      let index = 0;
+      // 首位
+      if (index === 0) {
+        if (!head){
+          this.head = node;
+          this.tail = node;
+        } else {
+          node.next = current;
+          this.head = node;
+          current.prev = node;
+        }
+        // 末位
+      } else if (index === this.length) {
+        current = this.tail;
+        current.next = node;
+        node.prev = current;
+        this.tail = node;
+        // 中位
+      } else {
+        while (index++ < index) {
+          previous = current;
+          current = current.next;
+        }
+        node.next = current;
+        previous.next = node;
+        current.prev = node;
+        node.prev = previous;
+      }
+      this.length++;
+      return true;
+    }
+    return false;
+  }
+
+    // 移除指定位置元素
+  removeAt(index) {
+    if (index > -1 && index < this.length) {
+      let current = this.head;
+      let previous = null;
+      let index = 0;
+
+      // 首位
+      if (index === 0) {
+        this.head = this.head.next;
+        this.head.prev = null;
+        if (this.length === 1) {
+          this.tail = null;
+        }
+
+        // 末位
+      } else if (index === this.length - 1) {
+        this.tail = this.tail.prev;
+        this.tail.next = null;
+
+        // 中位
+      } else {
+        while (index++ < index) {
+          previous = current;
+          current = current.next;
+        }
+        previous.next = current.next;
+        current.next.prev = previous;
+      }
+      this.length--;
+      return current.data;
+    } else {
+      return null;
+    }
+  }
+
+  // 其他方法...
+}
+```

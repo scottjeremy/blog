@@ -323,83 +323,85 @@ class DoublyLinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
-    this.length = 0;
   }
 
   // 任意位置插入元素
   insert(index, data) {
-    if (index >= 0 && index <= this.length){
+    if (index >= 0 && index <= this.length) {
       const node = new Node(data);
       let current = this.head;
       let previous = null;
       let index = 0;
-      // 首位
+      // 如果插入的位置为第一位
       if (index === 0) {
+        // 如果为空链表
         if (!head){
+          // 当前head指针指向新建的节点, tail等于这个节点
           this.head = node;
           this.tail = node;
         } else {
+          // 否则, 与单链表操作基本一致, 只是多了当前的prev指向新增节点
           node.next = current;
           this.head = node;
           current.prev = node;
         }
-        // 末位
+        // 如果插入的位置为最后一位
       } else if (index === this.length) {
         current = this.tail;
         current.next = node;
         node.prev = current;
         this.tail = node;
-        // 中位
+        // 在任意位置插入
       } else {
+        // 循环找到当前需要插入的位置
         while (index++ < index) {
           previous = current;
           current = current.next;
         }
+        // 再进行插入,与单链表的区别是多了往前查找的指针,即prev
         node.next = current;
         previous.next = node;
         current.prev = node;
         node.prev = previous;
       }
-      this.length++;
       return true;
     }
     return false;
   }
 
-    // 移除指定位置元素
+  // 移除指定位置元素
   removeAt(index) {
+    // 判断指定位置是否合理
     if (index > -1 && index < this.length) {
       let current = this.head;
       let previous = null;
       let index = 0;
 
-      // 首位
+      // 删除的位置是第一位
       if (index === 0) {
         this.head = this.head.next;
         this.head.prev = null;
         if (this.length === 1) {
           this.tail = null;
         }
-
-        // 末位
+      // 删除的位置在末尾
       } else if (index === this.length - 1) {
         this.tail = this.tail.prev;
         this.tail.next = null;
-
-        // 中位
+      // 在任意的位置删除
       } else {
+        // 与单链表相似,循环查找需要节点删除的位置
         while (index++ < index) {
           previous = current;
           current = current.next;
         }
+        // 改变前后指针即可
         previous.next = current.next;
         current.next.prev = previous;
       }
-      this.length--;
       return current.data;
-    } else {
-      return null;
     }
+    return null;
   }
 
   // 其他方法...

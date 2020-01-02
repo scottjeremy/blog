@@ -4,3 +4,4 @@
 ## JavaScript数据结构
 
 + [链表](article/data-structures/linked-list)
++ [树](article/data-structures/tree)

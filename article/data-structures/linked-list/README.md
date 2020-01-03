@@ -433,4 +433,12 @@ class DoublyLinkedList {
 
 实际上, 我们可以继续优化这个实现思路, 比如引入散列表(Hash table)来记录每个数据的位置, 将缓存访问的时间复杂度降到O(1).
 
+## 参考资料
+
+[http://voidcanvas.com/javascript-array-evolution-performance/](http://voidcanvas.com/javascript-array-evolution-performance/)
+
+[What is the performance of Objects/Arrays in JavaScript? (specifically for Google V8)](https://stackoverflow.com/questions/8423493/what-is-the-performance-of-objects-arrays-in-javascript-specifically-for-googl)
+
+[javascript-algorithms](https://github.com/trekhleb/javascript-algorithms/blob/master/src/data-structures/linked-list/LinkedList.js)
+
 问题: 给定一个链表，判断链表中是否有环?

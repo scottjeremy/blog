@@ -439,6 +439,8 @@ class DoublyLinkedList {
 
 [What is the performance of Objects/Arrays in JavaScript? (specifically for Google V8)](https://stackoverflow.com/questions/8423493/what-is-the-performance-of-objects-arrays-in-javascript-specifically-for-googl)
 
-[javascript-algorithms](https://github.com/trekhleb/javascript-algorithms/blob/master/src/data-structures/linked-list/LinkedList.js)
+[javascript-algorithms-LinkedList](https://github.com/trekhleb/javascript-algorithms/blob/master/src/data-structures/linked-list/LinkedList.js)
+
+[javascript-algorithms-DoublyLinkedList](https://github.com/trekhleb/javascript-algorithms/blob/master/src/data-structures/doubly-linked-list/DoublyLinkedList.js)
 
 问题: 给定一个链表，判断链表中是否有环?

@@ -250,7 +250,7 @@ O(n)
 
 ## 二叉搜索树的使用场景
 
-二叉查找树由于其构造的特性，使得其特别适合于需要动态查询而且数据量大的数据结构。
+二叉查找树由于其构造的特性，使得其特别适合于需要动态查询的数据结构。
 
 由于二叉查找树中序遍历即为有序序列，也使得其适合需要经常排序的数据结构。
 
@@ -259,3 +259,8 @@ O(n)
 - [Wikipedia](https://en.wikipedia.org/wiki/Binary_search_tree)
 - [Inserting to BST on YouTube](https://www.youtube.com/watch?v=wcIRPqTR3Kc&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&index=9&t=0s)
 - [BST Interactive Visualisations](https://www.cs.usfca.edu/~galles/visualization/BST.html)
+
+## JavaScript具体实现
+
+- [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms/blob/master/src/data-structures/tree/binary-search-tree/BinarySearchTree.js)
+- [javascript-algorithms2](https://github.com/mgechev/javascript-algorithms/blob/master/src/data-structures/binary-search-tree.js)

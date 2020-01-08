@@ -8,3 +8,4 @@
 + [栈](article/data-structures/stack)
 + [树](article/data-structures/tree)
   + [二叉搜索树](article/data-structures/tree/binary-search-tree)
+  + [AVL树](article/data-structures/tree/avl-tree)

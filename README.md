@@ -1,4 +1,7 @@
 # blog
+
+[![Build Status](https://travis-ci.org/scottjeremy/blog.svg?branch=master)](https://travis-ci.org/scottjeremy/blog)
+
 记录我想记录的博客
 
 ## JavaScript数据结构

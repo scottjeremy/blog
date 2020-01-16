@@ -1,5 +1,7 @@
 # 队列(Queue)
 
+[队列具体实现(Queue)](Queue.js)
+
 Queue和Stack有一些类似,不同的是Stack是先进后出,而Queue是先进先出. Queue在生活中的例子: 在饭堂排队领餐吃饭, 排在第一个的总是最先能领到餐; 又比如打印机的打印队列, 排在前面的最先打印.
 
 ![Queue](./images/1.png "Queue")

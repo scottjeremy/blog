@@ -19,9 +19,9 @@
   - [x] [栈实现](src/data-structures/stack/Stack.js)
 - [Tree](src/data-structures/tree) 树
   - [Binary Search Tree](src/data-structures/tree/binary-search-tree) 二叉搜索树
-    - [ ] [二叉搜索树实现](src/data-structures/tree/binary-search-tree)
+    - [x] [二叉搜索树实现](src/data-structures/tree/binary-search-tree/BinarySearchTree.js)
   - [AVL Tree](src/data-structures/tree/avl-tree) AVL树
-    - [ ] [AVL树实现](src/data-structures/tree/binary-search-tree)
+    - [x] [AVL树实现](src/data-structures/tree/avl-tree/AvlTree.js)
   - [Red-Black Tree](src/data-structures/tree/avl-tree) 红黑树
     - [ ] [红黑树实现](src/data-structures/tree/binary-search-tree)
   - [Segment Tree](src/data-structures/tree/avl-tree) 线段树

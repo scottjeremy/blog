@@ -47,4 +47,25 @@ describe('Comparator', () => {
     expect(comparator.greaterThanOrEqual('aa', 'a')).toBe(false);
     expect(comparator.greaterThanOrEqual('a', 'a')).toBe(true);
   });
+
+  it('test comparator object', () => {
+    const comparator = new Comparator((a, b) => {
+      if (a.id === b.id) {
+        return 0;
+      }
+
+      return a.max < b.max ? -1 : 1;
+    });
+
+    expect(comparator.equal({ id: 1, max: 100 }, { id: 1, max: 10 })).toBe(true);
+    expect(comparator.lessThan({ id: 1, max: 10 }, { id: 2, max: 100 })).toBe(true);
+    expect(comparator.greaterThan({ id: 1, max: 100 }, { id: 2, max: 10 })).toBe(true);
+
+    comparator.reverse();
+
+    expect(comparator.equal({ id: 1, max: 100 }, { id: 1, max: 10 })).toBe(true);
+    expect(comparator.lessThan({ id: 1, max: 10 }, { id: 2, max: 100 })).toBe(false);
+    expect(comparator.greaterThan({ id: 1, max: 100 }, { id: 2, max: 10 })).toBe(false);
+
+  });
 });

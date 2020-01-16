@@ -1,6 +1,7 @@
 # blog
 
 [![Build Status](https://travis-ci.org/scottjeremy/blog.svg?branch=master)](https://travis-ci.org/scottjeremy/blog)
+[![codecov](https://codecov.io/gh/scottjeremy/blog/branch/master/graph/badge.svg)](https://codecov.io/gh/scottjeremy/blog)
 
 记录我想记录的博客
 

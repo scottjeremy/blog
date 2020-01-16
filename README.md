@@ -3,10 +3,15 @@
 
 ## JavaScript数据结构
 
-+ [链表](article/data-structures/linked-list)
-+ [双向链表](article/data-structures/linked-list#双向链表)
-+ [堆](article/data-structures/heap)
-+ [栈](article/data-structures/stack)
-+ [树](article/data-structures/tree)
-  + [二叉搜索树](article/data-structures/tree/binary-search-tree)
-  + [AVL树](article/data-structures/tree/avl-tree)
+- [LinkedList](article/data-structures/linked-list) 链表
+  - [ ] [链表实现](article/data-structures/linked-list)
+  - [ ] [双向链表实现](article/data-structures/linked-list#双向链表)
+- [Heap](article/data-structures/heap) 堆
+  - [ ] [堆实现](article/data-structures/heap)
+- [stack](article/data-structures/stack) 栈
+  - [ ] [栈实现](article/data-structures/stack)
+- [Tree](article/data-structures/tree) 树
+  - [binary-search-tree](article/data-structures/tree/binary-search-tree) 二叉搜索树
+    - [ ] [二叉搜索树实现](article/data-structures/tree/binary-search-tree)
+  - [avl-tree](article/data-structures/tree/avl-tree) AVL树
+    - [ ] [AVL树实现](article/data-structures/tree/binary-search-tree)

@@ -14,9 +14,9 @@
 - [Queue](src/data-structures/queue) 队列
   - [x] [队列实现](src/data-structures/queue/Queue.js)
 - [Heap](src/data-structures/heap) 堆 - 最大堆和最小堆
-  - [ ] [堆实现](src/data-structures/heap/Heap.js)
-  - [ ] [最大堆实现](src/data-structures/heap/MaxHeap.js)
-  - [ ] [最小堆实现](src/data-structures/heap/MinHeap.js)
+  - [x] [堆实现](src/data-structures/heap/Heap.js)
+  - [x] [最大堆实现](src/data-structures/heap/MaxHeap.js)
+  - [x] [最小堆实现](src/data-structures/heap/MinHeap.js)
 - [Hash Table](src/data-structures/hash-table) 哈希表
   - [ ] [哈希表实现](src/data-structures/hash-table/HashTable.js)
 - [stack](src/data-structures/stack) 栈

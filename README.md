@@ -18,7 +18,7 @@
   - [x] [最大堆实现](src/data-structures/heap/MaxHeap.js)
   - [x] [最小堆实现](src/data-structures/heap/MinHeap.js)
 - [Hash Table](src/data-structures/hash-table) 哈希表
-  - [ ] [哈希表实现](src/data-structures/hash-table/HashTable.js)
+  - [x] [哈希表实现](src/data-structures/hash-table/HashTable.js)
 - [stack](src/data-structures/stack) 栈
   - [x] [栈实现](src/data-structures/stack/Stack.js)
 - [Tree](src/data-structures/tree) 树
@@ -35,3 +35,16 @@
 - [Graph](src/data-structures/tree) 图 (有向图与无向图)
 - [Disjoint Set](src/data-structures/tree) 并查集
 - [Bloom Filter](src/data-structures/tree) 布隆过滤器
+
+## TODO: JavaScript算法
+
+- 排序 (Sort)
+  - [ ] 冒泡排序
+  - [ ] 选择排序
+  - [ ] 插入排序
+  - [ ] 堆排序
+  - [ ] 归并排序
+  - [ ] 快速排序
+  - [ ] 希尔排序
+  - [ ] 计数排序
+  - [ ] 基数排序

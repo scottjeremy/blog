@@ -32,7 +32,7 @@
     - [ ] [线段树实现](src/data-structures/tree/binary-search-tree)
   - [Fenwick Tree](src/data-structures/tree/avl-tree) 树状数组
     - [ ] [树状数组实现](src/data-structures/tree/binary-search-tree)
-- [Graph](src/data-structures/tree) 图 (有向图与无向图)
+- [Graph](src/data-structures/graph) 图 (有向图与无向图)
 - [Disjoint Set](src/data-structures/tree) 并查集
 - [Bloom Filter](src/data-structures/tree) 布隆过滤器
 

@@ -39,12 +39,12 @@
 ## TODO: JavaScript算法
 
 - 排序 (Sort)
-  - [ ] 冒泡排序
-  - [ ] 选择排序
-  - [ ] 插入排序
-  - [ ] 堆排序
+  - [x] 冒泡排序 - [Bubble Sort](src/algorithms/sorting/bubble-sort)
+  - [x] 选择排序 - [Selection Sort](src/algorithms/sorting/selection-sort)
+  - [x] 插入排序 - [Insertion Sort](src/algorithms/sorting/insertion-sort)
+  - [x] 堆排序 - [Heap Sort](src/algorithms/sorting/heap-sort)
   - [ ] 归并排序
   - [ ] 快速排序
-  - [ ] 希尔排序
+  - [x] 希尔排序 - [Shell Sort](src/algorithms/sorting/shell-sort)
   - [ ] 计数排序
   - [ ] 基数排序

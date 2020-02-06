@@ -2,6 +2,8 @@
 
 选择排序，选定数组中一个元素，然后循环数组每一个元素进行比较，时间复杂度都为O(n<sup>2</sup>)，但是它是以简单出名。
 
+平时用得就是选择排序...时间复杂度都是n的平方...以后引以为戒啊！
+
 ![Algorithm Visualization](https://upload.wikimedia.org/wikipedia/commons/b/b0/Selection_sort_animation.gif)
 
 ![Algorithm Visualization](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)

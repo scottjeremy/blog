@@ -36,7 +36,22 @@
 - [Disjoint Set](src/data-structures/tree) 并查集
 - [Bloom Filter](src/data-structures/tree) 布隆过滤器
 
-## TODO: JavaScript算法
+### 数据结构操作的复杂性
+
+| 数据结构       |  连接  |  查找  |  插入  |  删除  | 备注 |
+| -------------- | :----: | :----: | :----: | :----: | ---- |
+| **数组**       |   1    |   n    |   n    |   n    |      |
+| **栈**         |   n    |   n    |   1    |   1    |      |
+| **队列**       |   n    |   n    |   1    |   1    |      |
+| **链表**       |   n    |   n    |   1    |   1    |      |
+| **哈希表**     |   -    |   n    |   n    |   n    | 在完全哈希函数情况下，复杂度是 O(1） |
+| **二分查找树** |   n    |   n    |   n    |   n    | 在平衡树情况下，复杂度是 O(log(n)) |
+| **B 树**       | log(n) | log(n) | log(n) | log(n) |      |
+| **红黑树**     | log(n) | log(n) | log(n) | log(n) |      |
+| **AVL 树**     | log(n) | log(n) | log(n) | log(n) |      |
+| **布隆过滤器** |   -    |   1    |   1    | - | 存在一定概率的判断错误（误判成存在） |
+
+## JavaScript算法
 
 - 排序 (Sort)
   - [x] 冒泡排序 - [Bubble Sort](src/algorithms/sorting/bubble-sort)
@@ -46,5 +61,19 @@
   - [x] 归并排序 - [Merge Sort](src/algorithms/sorting/merge-sort)
   - [x] 快速排序 - [Quick Sort](src/algorithms/sorting/quick-sort)
   - [x] 希尔排序 - [Shell Sort](src/algorithms/sorting/shell-sort)
-  - [ ] 计数排序
-  - [ ] 基数排序
+  - [x] 计数排序 - [Counting Sort](src/algorithms/sorting/counting-sort)
+  - [x] 基数排序
+
+### 数组排序算法的复杂性
+
+| 名称                  | 最优      | 平均      | 最坏          | 内存      | 稳定      | 备注                  |
+| --------------------- | :-------: | :-------: | :-----------: | :-------: | :-------: | --------------------- |
+| **冒泡排序**          | n         | n^2       | n^2           | 1         | Yes       |                       |
+| **插入排序**          | n         | n^2       | n^2           | 1         | Yes       | 如果序列基本有序，则插入排序简单且有效，比冒泡排序效率要高 |
+| **选择排序**          | n^2       | n^2       | n^2           | 1         | No        |                       |
+| **堆排序**            | n log(n)  | n log(n)  | n log(n)      | 1         | No        |                       |
+| **归并排序**          | n log(n)  | n log(n)  | n log(n)      | n         | Yes       |                       |
+| **快速排序**          | n log(n)  | n log(n)  | n^2           | log(n)    | No        | 在 in-place 版本下，内存复杂度通常是 O(log(n)) |
+| **希尔排序**          | n log(n)  | 取决于差距序列   | n (log(n))^2  | 1         | No        |  |
+| **计数排序**          | n + r     | n + r     | n + r         | n + r     | Yes       | r - 数组里最大的数    |
+| **基数排序**          | n * k     | n * k     | n * k         | n + k     | Yes       | k - 最长 key 的升序   |

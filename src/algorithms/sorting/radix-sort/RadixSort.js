@@ -11,10 +11,11 @@ export default class RadixSort extends Sort {
    * @return {*[]}
    */
   sort(originalArray) {
-    // Assumes all elements of array are of the same type
+    // 假设数组的所有元素都属于同一类型
     const isArrayOfNumbers = this.isArrayOfNumbers(originalArray);
 
     let sortedArray = [...originalArray];
+    // 得到数组中最长字符串的长度
     const numPasses = this.determineNumPasses(sortedArray);
 
     for (let currentIndex = 0; currentIndex < numPasses; currentIndex += 1) {
@@ -22,7 +23,7 @@ export default class RadixSort extends Sort {
         ? this.placeElementsInNumberBuckets(sortedArray, currentIndex)
         : this.placeElementsInCharacterBuckets(sortedArray, currentIndex, numPasses);
 
-      // Flatten buckets into sortedArray, and repeat at next index
+      // 将存储桶展平为sortedArray，并在下一个索引处重复
       sortedArray = buckets.reduce((acc, val) => {
         return [...acc, ...val];
       }, []);
@@ -37,7 +38,7 @@ export default class RadixSort extends Sort {
    * @return {*[]}
    */
   placeElementsInNumberBuckets(array, index) {
-    // See below. These are used to determine which digit to use for bucket allocation
+    // 见下文。这些用于确定用于存储桶分配的数字
     const modded = 10 ** (index + 1);
     const divided = 10 ** index;
     const buckets = this.createBuckets(NUMBER_OF_POSSIBLE_DIGITS);
@@ -100,8 +101,7 @@ export default class RadixSort extends Sort {
   }
 
   /**
-   * Number of passes is determined by the length of the longest element in the array.
-   * For integers, this log10(num), and for strings, this would be the length of the string.
+   * 通过次数由数组中最长元素的长度确定。对于整数，此log10（num）；对于字符串，这将是字符串的长度。
    */
   determineNumPasses(array) {
     return this.getLengthOfLongestElement(array);
@@ -126,7 +126,7 @@ export default class RadixSort extends Sort {
    * @return {boolean}
    */
   isArrayOfNumbers(array) {
-    // Assumes all elements of array are of the same type
+    // 假设数组的所有元素都属于同一类型
     return this.isNumber(array[0]);
   }
 

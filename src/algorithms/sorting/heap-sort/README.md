@@ -13,7 +13,7 @@
 | ----------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
 | **堆排序**         | n&nbsp;log(n)   | n&nbsp;log(n)       | n&nbsp;log(n)       | 1         | No        |           |
 
-## References
+## 参考资料
 
 - [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms/blob/master/src/algorithms/sorting/heap-sort/README.md)
 - [Wikipedia](https://en.wikipedia.org/wiki/Heapsort)

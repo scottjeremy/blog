@@ -80,8 +80,8 @@
 
 ## TODO：JavaScript设计模式
 
-- [x] 单例模式 - [Constructor Pattern](src/design-pattern/ConstructorPattern)
-- [ ] 策略模式
+- [x] 单例模式 - [Singleton Pattern](src/design-pattern/SingletonPattern)
+- [x] 策略模式 - [Strategy Pattern](src/design-pattern/StrategyPattern)
 - [ ] 代理模式
 - [ ] 迭代器模式
 - [ ] 发布-订阅模式

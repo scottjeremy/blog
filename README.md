@@ -83,7 +83,7 @@
 - [x] 单例模式 - [Singleton Pattern](src/design-pattern/SingletonPattern)
 - [x] 策略模式 - [Strategy Pattern](src/design-pattern/StrategyPattern)
 - [x] 代理模式 - [Proxy Pattern](src/design-pattern/ProxyPattern/README.md)
-- [ ] 迭代器模式
+- [x] 迭代器模式 - [Iterator Pattern](src/design-pattern/IteratorPattern/README.md)
 - [ ] 发布-订阅模式
 - [ ] 命令模式
 - [ ] 组合模式
